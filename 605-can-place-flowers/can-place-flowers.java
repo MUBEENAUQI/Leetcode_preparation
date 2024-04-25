@@ -16,16 +16,16 @@ class Solution {
         return false;
 
         while(i<=l-1){
-                System.out.println("i = " + i);
+               
             if(i==0 && l>=2 && flowerbed[0]==0 && flowerbed[1]==0){
-                 System.out.println("inside start");
+               
                 temp++;
                 flowerbed[0]=1;
                 i++;
                 continue;
             }
             if( i==l-1 && l>=2 && flowerbed[l-1]==0 && flowerbed[l-2]==0){
-                 System.out.println("insisde end");
+               
                 temp++;
                 flowerbed[l-1]=1;
                 i++;
@@ -33,15 +33,13 @@ class Solution {
             }
 
             if(!(i-1<0) && i+1!=l){
-                System.out.println("in middle");
+              
                 if(flowerbed[i]==0 && flowerbed[i+1]==0 && flowerbed[i-1]==0){
                     temp++;
                     flowerbed[i]=1;
                 }
 
             }
-              System.out.println("increment loop");
-               System.out.println("temp ="+temp);
             i++;
 
         }  
