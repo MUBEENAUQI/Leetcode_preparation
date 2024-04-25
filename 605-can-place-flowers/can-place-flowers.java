@@ -1,6 +1,6 @@
 class Solution {
     public boolean canPlaceFlowers(int[] flowerbed, int n) {
-        boolean flag = false;
+        
         int temp = 0;
         int l = flowerbed.length;
         int i=0;
@@ -40,6 +40,7 @@ class Solution {
                 }
 
             }
+
             i++;
 
         }  
